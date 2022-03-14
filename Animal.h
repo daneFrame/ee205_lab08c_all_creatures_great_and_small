@@ -36,7 +36,7 @@ public:
 
     Gender getGender() const;
 
-    void setGender(Gender gender);
+    void setGender(Gender newGender);
 
     float getWeight() const;
 
@@ -50,6 +50,12 @@ protected:
     std::string species; //Required
     enum Gender gender = UNKNOWN_GENDER;
     float weight = UNKOWN_WEIGHT;
+
+    bool validateWeight (const float newWeight);
+    bool validateSpecies( const std::string newSpecies);
+
+private:
+    void setSpecies(const std::string newSpecies);
 };
 
 
