@@ -15,10 +15,6 @@ using namespace std;
 
 const string Animal::kingdom = "Animalia";
 
-Animal::Animal(const string &newSpecies) : species(newSpecies){
-    Animal::species = newSpecies;
-}
-
 Animal::Animal(const string &newSpecies) {
     setSpecies(newSpecies);
 }
